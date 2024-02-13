@@ -1,9 +1,12 @@
-hello(goodbye)
+let fruits = ["apple","banana","coconut","orange"];
 
-function hello(callback){
-        console.log("Hello!")
-    callback();
+fruits.forEach(upperCase);
+fruits.forEach(display);
+
+function upperCase(element,index,array){
+    array[index] = element.toUpperCase();
 }
-function goodbye(){
-    console.log("Goodbye!")
+function display(element){
+    console.log(element)
 }
+

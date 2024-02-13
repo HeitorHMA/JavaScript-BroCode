@@ -1,7 +1,8 @@
-function hello(){
-    setTimeout(() => {
+hello(goodbye)
+
+function hello(callback){
         console.log("Hello!")
-    }, 300);
+    callback();
 }
 function goodbye(){
     console.log("Goodbye!")

@@ -1,8 +1,22 @@
-let students = [16 ,16 ,17 ,19, 19 , 18, 20, 21]
 
-let adults = students.filter(isAdult)
+function fizzBuzzing(){
 
-function isAdult(element){
-   return element >= 18 ;
-}
-console.log(adults)
+   let lenght = 20
+
+for (i = 1 ; i < lenght ; i++){
+   if(i % 15 === 0){
+      console.log("FizzBuzz!")
+   }
+   else if (i % 5 === 0){
+      console.log("Buzz")
+   }
+   else if (i % 3 === 0 ){
+      console.log("Fizz")
+   }
+   else{
+      console.log(i)
+   }
+}}
+fizzBuzzing()
+
+
